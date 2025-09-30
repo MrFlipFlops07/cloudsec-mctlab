@@ -16,44 +16,7 @@ This project replicates a real-world Security Operations Center (SOC) pipeline i
 
 The project demonstrates **cloud security best practices**, automated monitoring, and the workflow of a SOC analyst in handling cloud threats.
 
----
-
-## Architecture
-
-      +----------------+
-      | AWS CloudTrail |
-      +----------------+
-             |
-             v
-     +------------------+
-     | CloudWatch Logs  |
-     +------------------+
-             |
-             v
-    +--------------------+
-    | Ingest Lambda       |
-    | (Parses & Indexes) |
-    +--------------------+
-             |
-             v
-  +------------------------+
-  | Elasticsearch (ELK)    |
-  | Kibana Visualization   |
-  +------------------------+
-             ^
-             |
-     +--------------------+
-     | Detector Lambda    |
-     | (Analyzes Events)  |
-     +--------------------+
-             |
-             v
-    +-------------------+
-    | Playbook Lambda   |
-    | (Automated IR)    |
-    +-------------------+
-
-    - **Ingest Lambda:** Collects CloudTrail logs from CloudWatch and indexes them into Elasticsearch for analysis.
+- **Ingest Lambda:** Collects CloudTrail logs from CloudWatch and indexes them into Elasticsearch for analysis.
 - **Detector Lambda:** Runs detection queries on Elasticsearch for suspicious events and triggers automated responses.
 - **Playbook Lambda:** Executes response actions such as stopping EC2 instances, revoking IAM keys, and generating alerts.
 
