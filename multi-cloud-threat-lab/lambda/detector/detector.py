@@ -1,3 +1,4 @@
+ HEAD
 #!/usr/bin/env python3
 import os, requests, json, logging, boto3
 
@@ -60,3 +61,4 @@ def lambda_handler(event, context):
             }
             call_playbook(payload)
     return {"checked": len(hits)}
+ 3185941 (Add full infra, lambdas, and docker-compose for multi-cloud threat detection lab)
