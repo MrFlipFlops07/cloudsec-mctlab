@@ -1,0 +1,11 @@
+{
+  "@timestamp":"2025-09-30T10:00:00Z",
+  "eventVersion":"1.08",
+  "userIdentity":{"type":"IAMUser","arn":"arn:aws:iam::123456789012:user/test-user"},
+  "eventTime":"2025-09-30T10:00:00Z",
+  "eventName":"ConsoleLogin",
+  "sourceIPAddress":"198.51.100.14",
+  "awsRegion":"us-east-1",
+  "requestParameters":null,
+  "responseElements":{"ConsoleLogin":"Success"}
+}
