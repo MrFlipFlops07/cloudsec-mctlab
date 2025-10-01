@@ -87,18 +87,11 @@ The project demonstrates **cloud security best practices**, automated monitoring
 - End-to-end demonstration of **cloud SOC operations**.
 - Real-time threat detection, alerting, and automated response pipeline.
 - Modular and extensible architecture for hands-on experimentation.
-- Clear portfolio-ready evidence of cloud security skills suitable for SOC analyst or cloud security roles.
-- Fully documented and GitHub-ready for recruiters, hiring managers, or technical reviewers.
 
 ---
 
 ## Takeaways
 
-This project showcases advanced cloud security concepts including:
-
 - Monitoring and detection of cloud events in real-time.
 - Automated remediation using serverless infrastructure.
 - Centralized logging and visual analytics for threat management.
-- Practical demonstration of SOC analyst workflows and cloud defense mechanisms.
-
-It serves as a strong portfolio piece for anyone targeting **SOC analyst or cloud security roles**.
